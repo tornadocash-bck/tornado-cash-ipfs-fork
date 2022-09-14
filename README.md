@@ -1,6 +1,17 @@
-# Tornado Cash Classic UI
+# Tornado Cash Fork for IPFS
 
-> UI for non-custodial Ethereum Privacy solution
+The Treasury Department has recently sanctioned the decentralized privacy solution Tornado Cash. This is in direct violation of the First Amendment, as it bans open source code and restricts freedom of speech. Tornado Cash is a key part of the Ethereum blockchain, and its banning will have a negative impact on innovation within the blockchain space. The Treasury Department's actions are a clear attempt to stifle innovation and restrict freedom of speech. We urge the department to reverse its decision and allow Tornado Cash to continue operating openly and freely. 
+
+
+Privacy is a human right that is enshrined in the United Nations Declaration of Human Rights. It is essential for individuals to be able to freely express themselves and associate with others without fear of retribution. Privacy allows for the free exchange of ideas and information, and is necessary for democratic societies.
+
+The Treasury Department has sanctioned Tornado Cash, a decentralized privacy solution built on the Ethereum blockchain. New guidelines state that users will need to apply for a license in order to use the service.
+
+
+This is unfortunate, as users should not have to apply for a license in order to have the right to privacy. Tornado Cash is a valuable tool that can help protect people's privacy online, and it should be available to everyone.
+
+
+Hopefully, the Treasury Department will reconsider its decision and allow Tornado Cash to continue operating freely. 
 
 ## Building locally
 
@@ -19,41 +30,14 @@ To start a development build (e.g. with logging and file watching) run `yarn dev
 ## Deploy on IPFS
 
 - Make sure you set `PINATA_API_KEY` and `PINATA_SECRET_API_KEY` environment variables in `.env`
-- To deploy a production build run `yarn deploy-ipfs`.
+- To deploy a production build run `yarn deploy-ipfs`. 
+- Example of [Tornado Cash](https://cloudflare-ipfs.com/ipns/tornadocash-ipfs.eth) on IPFS
 
-## Architecture
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
 ## Audit
 
 [TornadoCash_Classic_dApp_audit_Decurity.pdf](https://tornado.cash/audits/TornadoCash_Classic_dApp_audit_Decurity.pdf)
 
-## Update cached files
 
-- For update deposits and withdrawals events use `yarn update:events {chainId}`
-- For update encrypted notes use `yarn update:encrypted {chainId}`
-- For update merkle tree use `yarn update:tree {chainId}`
 
-#### NOTE!
-
-After update cached files do not forget to use `yarn update:zip`
-
-### Example for Ethereum Mainnet:
-
-```
-yarn update:events 1
-yarn update:encrypted 1
-yarn update:tree 1
-
-yarn update:zip
-```
-
-### Example for Binance Smart Chain:
-
-```
-yarn update:events 56
-yarn update:encrypted 56
-
-yarn update:zip
-```
